@@ -5,10 +5,19 @@
 }
 
 #instructions {
-    font-family: 'Permanent Marker', cursive;
+    
     text-align: center;
 
 }
 .row1 {
 align-content: center
 }
+body {
+    
+     background-image: url("/Users/kaylaverheyen/Desktop/hw_4/unit-4-game/assets/images/Light-Blue-Effect-PPT-Backgrounds.jpg");   
+}
+.crystal-image {
+    align-content: center;
+    width: 200px;
+    height: 200px;
+  }
