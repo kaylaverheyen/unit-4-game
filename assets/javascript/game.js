@@ -30,10 +30,10 @@ for (var i = 0; i < crystalsPoints.length; i++) {
 
 
    // Each imageCrystal will be given a src link to the crystal image
-   imageCrystalRuby.attr("src", "/Users/kaylaverheyen/Desktop/hw_4/unit-4-game/assets/images/gemstone-143303-ruby-oval-red-62043.jpg");
-   imageCrystalEmerald.attr("src", "/Users/kaylaverheyen/Desktop/hw_4/unit-4-game/assets/images/in-detail-gemstone-emerald-06-740x493.jpg"); 
-   imageCrystalCarnary.attr("src", "/Users/kaylaverheyen/Desktop/hw_4/unit-4-game/assets/images/loose-yellow-diamonds-fancy-yellow-diamond-ring-canary-yellow-diamond-fancy-vivid.jpg");
-   imageCrystalDiamond.attr("src", "/Users/kaylaverheyen/Desktop/hw_4/unit-4-game/assets/images/Round-cut-diamond.jpg");
+   imageCrystalRuby.attr("src", "./assets/images/gemstone-143303-ruby-oval-red-62043.jpg");
+   imageCrystalEmerald.attr("src", "./assets/images/in-detail-gemstone-emerald-06-740x493.jpg"); 
+   imageCrystalCarnary.attr("src", "./assets/images/loose-yellow-diamonds-fancy-yellow-diamond-ring-canary-yellow-diamond-fancy-vivid.jpg");
+   imageCrystalDiamond.attr("src", "./assets/images/Round-cut-diamond.jpg");
 
    // Each imageCrystal will be given a data attribute called data-crystalValue.
    // This data attribute will be set equal to the array value.
@@ -43,10 +43,10 @@ for (var i = 0; i < crystalsPoints.length; i++) {
    imageCrystalDiamond.attr("data-crystalvalue", crystalsPoints[3]);
 
    // Lastly, each crystal image (with all it classes and attributes) will get added to the page.
-   $("#crystals").append(imageCrystalRuby);
-   $("#crystals").append(imageCrystalEmerald);
-   $("#crystals").append(imageCrystalCarnary);
-   $("#crystals").append(imageCrystalDiamond);
+   $("#crystals1").html(imageCrystalRuby);
+   $("#crystals2").html(imageCrystalEmerald);
+   $("#crystals3").html(imageCrystalCarnary);
+   $("#crystals4").html(imageCrystalDiamond);
  }
 
  // This time, our click event applies to every single crystal on the page. Not just one.
@@ -55,10 +55,14 @@ for (var i = 0; i < crystalsPoints.length; i++) {
     crystalValue = parseInt(crystalValue);
     // We then add the crystalValue to the user's "counter" which is a global variable.
     // Every click, from every crystal adds to the global counter.
-    totalScore += crystalValue;
+
+    
+   $("total-score").text(totalScore += crystalValue);
+    console.log(totalScore += crystalValue)
     alert("New score: " + totalScore);
 
     if (totalScore === randomNumber) {
+      wins++;
       alert("You win!");
     }
 

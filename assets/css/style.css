@@ -9,7 +9,7 @@
     text-align: center;
 
 }
-.row1 {
+.row {
 align-content: center
 }
 body {
@@ -17,7 +17,10 @@ body {
      background-image: url("/Users/kaylaverheyen/Desktop/hw_4/unit-4-game/assets/images/Light-Blue-Effect-PPT-Backgrounds.jpg");   
 }
 .crystal-image {
-    align-content: center;
-    width: 200px;
-    height: 200px;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+  }
+  .row2 {
+    display: inline-block;
   }
