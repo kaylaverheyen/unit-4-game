@@ -24,3 +24,7 @@ body {
   .row2 {
     display: inline-block;
   }
+
+  .mg{
+      margin-bottom: 30px;
+  }
