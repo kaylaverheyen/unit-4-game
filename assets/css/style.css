@@ -1,20 +1,23 @@
 #title {
     font-family: 'Permanent Marker', cursive;
     text-align: center;
-    font-size: 40px;
+    font-size: 60px;
 }
 
 #instructions {
-    
+    font-size: 15px;
     text-align: center;
-
+}
+.jumbotron{
+    padding:0px;
+    margin-bottom: 0em;
 }
 .row {
 align-content: center
 }
 body {
     
-     background-image: url("/Users/kaylaverheyen/Desktop/hw_4/unit-4-game/assets/images/Light-Blue-Effect-PPT-Backgrounds.jpg");   
+     background-image: url("../images/Light-Blue-Effect-PPT-Backgrounds.jpg");   
 }
 .crystal-image {
     display: inline-block;
@@ -28,3 +31,23 @@ body {
   .mg{
       margin-bottom: 30px;
   }
+  #keyCard{
+      width: 468px;
+      height: 350px;
+  }
+  #crystals1{
+      float: left;
+      padding: 2px;
+  }
+  #crystals2{
+    float: left;
+    padding: 2px;
+}
+#crystals3{
+    float: left;
+    padding: 2px;
+}
+#crystals4{
+    float: left;
+    padding: 2px;
+}
